@@ -2,6 +2,11 @@
 
 This application makes a random hex value, from an array of all possible hex values, and changes the applications background. The solution utilizes a javascript function that concatenates 6 different randomized hex values to a string that begins with the '#' character - meaning that the background color can be swapped with a simple call. 
 
+## Viewing Website
+
+1. Click on https://overlake333.github.io/hex-background-changer/ or the link under the "About" section of the GitHub page
+2. Explore!
+
 ## Step by Step to Run Locally
 
  1. `git clone https://github.com/overlake333/hex-background-changer.git`
