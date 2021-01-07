@@ -1,3 +1,22 @@
+
 .max-height{
     min-height: 100vh;
    }
+
+
+.btn {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border: black;
+    border-style: solid;
+    border-radius: 1px;
+    padding: 10px;
+    font-family: "Raleway";
+
+}
+.btn:hover {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+  }
