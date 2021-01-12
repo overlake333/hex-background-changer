@@ -1,21 +1,28 @@
-// Method adapted from https://github.com/JS-Beginners/hex-color-background-changer
+// Source: https://github.com/JS-Beginners/hex-color-background-changer
 
 (function() {
-    const button = document.querySelector('#btn')
-    const body = document.querySelector('body')
-    const hexValues = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F']
-    const value = document.querySelector('#hex-value')
+    // acceptable hex characters
+    const hexVals = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F']
+    
+    // variables from DOM 
+    var btn = document.querySelector('#btn')
+    var body = document.querySelector('body')
+    var val = document.querySelector('#hex-value')
+    
+    // adding an event listener to the button
+    btn.addEventListener('click', getNewHex)
 
-    button.addEventListener('click', changeHex)
-
-    function changeHex(){
+    // function to change hex value of the website's background color
+    function getNewHex(){
+        // generating random Hex variable
         let hex = '#'
-
         for (let i = 0; i < 6; i++){
-            const index = Math.floor(Math.random()*hexValues.length)
-            hex += hexValues[index]
+            var index = Math.floor(Math.random() * hexVals.length)
+            hex += hexVals[index]
         }
-        value.textContent = hex
+        
+        // set DOM variables to new hex code
+        val.textContent = hex
         body.style.backgroundColor = hex
     }
 } )()
