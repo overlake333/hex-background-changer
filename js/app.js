@@ -1,4 +1,10 @@
 // Source: https://github.com/JS-Beginners/hex-color-background-changer
+// .  .  .
+// Learned the basics of Javascript and took a deep dive into DOM 
+// by learning how to find HTML elements by tag name through calling
+// .querySelector() on the DOM and the differences between Core DOM, 
+// XML DOM, and HTML DOM. 
+// .  .  .
 
 (function() {
     // acceptable hex characters
